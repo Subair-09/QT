@@ -86,9 +86,10 @@ export default function Spotlight() {
                     (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800";
                   }}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent md:hidden" />
-                <div className="absolute bottom-4 left-4 text-white md:hidden">
-                  <p className="text-[10px] font-bold uppercase tracking-widest">{story.companyName}</p>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+                <div className="absolute bottom-4 left-4 text-white">
+                  <p className="text-[9px] font-bold uppercase tracking-[0.2em] text-white">Company</p>
+                  <p className="text-[11px] font-bold uppercase tracking-widest text-white drop-shadow-xs">{story.companyName}</p>
                 </div>
               </div>
               

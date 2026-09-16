@@ -230,8 +230,8 @@ export default function SpotlightPage() {
                     />
                   </div>
                   <div className="absolute -bottom-6 -right-6 bg-brand-accent text-white p-8 rounded-2xl shadow-xl">
-                    <p className="editorial-label text-white/80 mb-2">Company</p>
-                    <p className="text-xl font-bold">{story.companyName}</p>
+                    <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-white mb-2">Company</p>
+                    <p className="text-xl font-bold text-white">{story.companyName}</p>
                   </div>
                 </motion.div>
 
@@ -293,6 +293,8 @@ export default function SpotlightPage() {
               >
                 <div className="flex flex-wrap items-center gap-3 mb-4">
                   <span className="editorial-label text-brand-accent tracking-[0.3em] uppercase">Founder Spotlight</span>
+                  <span className="text-slate-300">•</span>
+                  <span className="editorial-label text-slate-700">{story.companyName}</span>
                   <span className="text-slate-300">•</span>
                   <span className="text-xs text-slate-400 flex items-center gap-1">
                     <Calendar size={12} />
